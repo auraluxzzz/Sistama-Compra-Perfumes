@@ -1,0 +1,173 @@
+
+
+
+body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; 
+    color: #333;
+}
+
+/* Contenedor principal de todo el contenido de la página */
+.Contenido {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+/* Contenedor del detalle del producto: Imagen a la izquierda, Info a la derecha */
+.detalleProducto {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 40px; 
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+/* Estilos para la sección de la imagen del producto */
+.imagen {
+    flex: 0 0 400px; 
+    max-width: 100%; 
+    text-align: center;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; 
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+/* Estilos para la sección de información del producto */
+.Pruducto {
+    flex-grow: 1; 
+    min-width: 450px; 
+}
+
+.Pruducto h1 {
+    font-size: 2.8em;
+    color: #222;
+    margin-bottom: 5px;
+}
+.Pruducto .Titulo1 {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+}
+.Pruducto .codigo {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la sección de presentaciones */
+.presentacion {
+    margin-top: 20px;
+}
+.presentacion h2 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+.Opciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.opcion {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    flex: 1 1 45%; 
+    min-width: 150px; 
+}
+.opcion:hover {
+    border-color: #000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.opcion.selected {
+    border-color: #000;
+    background-color: #eee;
+}
+.opcion .Info {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+.opcion .precio {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #000;
+}
+.añadir {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.añadir:hover {
+    background-color: #333;
+}
+
+
+/* Secciones plegables (DESCRIPCIÓN, NOTAS OLFATIVAS, RESEÑAS) */
+.Titulo2 {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+.Titulo2 h3 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.Titulo2 h3:after {
+    content: '\25BC';
+    font-size: 0.8em;
+    transition: transform 0.3s ease;
+}
+
+.contenido {
+    display: block;
+    padding-left: 10px;
+    font-size: 0.95em;
+    color: #555;
+}
+.contenido ul {
+    list-style: disc inside;
+    padding-left: 0;
+}
+.contenido li {
+    margin-bottom: 5px;
+}
+
